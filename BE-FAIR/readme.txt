@@ -1,11 +1,1 @@
-*Web UI (on progress)
-***Logo+Main Theme (on progess)
-***Info Acara (no progress)
-***Lineup (no progress)
-***Sponsor (layout on progress)
-***Partnership (layout on progress)
-***Donation (no progress)
-*Fitur Login Peserta, Transaksi dan Bot Email Kartu Peserta (To Be Confirmed)
-*Pendaftaran Peserta (TBC)
-*Pembelian Tiket (TBC)
-*Hosting dan Database (?)
+wwwwwww
