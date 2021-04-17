@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 12px;
+    font-family: 'Poppins', 'Caveat', sans-serif;
+}
+a {
+    text-decoration: none;
+    background-color: none;
+}
+p {
+    text-indent: 4rem;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 6vw;
+    transition: ease 0.6s;
+    z-index: 1;
+}
+header.navnext {
+    padding: 1.5vh 6vw;
+    background: linear-gradient(to bottom, #ff9a9e 0%, transparent 99%, #fecfef 100%);
+    transition: ease 1.2s;
+}
+header .navl {
+    position: relative;
+    background: transparent;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+header .navl .befnav {
+    padding: 0 0;
+    margin-bottom: -8px;
+    font-size: 2rem;
+}
+header.navnext .navl .befnav {
+    display: none;
+}
+header .navl .yearnav {
+    padding: 0 0;
+    margin-top: -8px;
+    font-size: 1.5rem;
+}
+header.navnext .navl .yearnav {
+    display: none;
+}
+header .navl .befandyearnav {
+    display: none;
+}
+header.navnext .navl .befandyearnav {
+    display: block;
+    padding: 0 0;
+    margin: 0 0;
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+header.navnext .navl {
+    color: black;
+}
+header .navl a {
+    color: white;
+    transition: ease .3s;
+}
+header.navnext .navl a {
+    color: black;
+    background-color: transparent;
+}
+header .navr {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .navr li {
+    position: relative;
+    list-style: none;
+}
+header .navr li a{
+    position: relative;
+    margin: 0 20px;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: ease .3s;
+}
+header.navnext .navr li a {
+    color: black;
+}
+.burger {
+    display: none;
+}
+.burger div {
+    width: 28px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+header.navnext .burger div  {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    header .navr {
+        position: relative;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    header .navr.navr1 {
+        position: fixed;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        top: 0vh;
+        left: 0vw;
+        padding-top: 20vh;
+        background: linear-gradient(to bottom, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    }
+    header .navl.navl1 {
+        display: none;
+    }
+    .lir.lir1 {
+        left: 1vw;
+        padding: 3vh 0vw;
+        text-align: center;
+    }
+    .burger {
+        position: fixed;
+        display: block;
+        cursor: pointer;
+        right: 4vw;
+        top:4vh;
+    }
+}
+
+/* end navbar */
+
+/* sechome */
+.sechome {
+    flex-direction: column;
+    position: relative;
+    padding: 2vh 2vw;
+    background-image: url("/images/BG.gif");
+    background-size: cover;
+    background-position: center;
+}
+.bef {
+    font-family: 'Poppins';
+    font-size: 2rem;
+    display: none;
+}
+.logolink {
+    height: 32vh;
+    width: 16vw;
+    background-color: transparent;
+}
+@media screen and (max-width: 768px) {
+    .logolink {
+        height: 32vh;
+        width: 32vw;
+        background-color: transparent;
+    }
+}
+/* end sechome */ 
+
+/* snm */
+.acara {
+    align-items: center;
+}
+/* end snm */
+
+/* secfoot */
+/* end secfoot */
+
+/* control */
+@media screen and (max-width: 768px) {
+    body {
+        z-index: 1;
+    }
+}
+@keyframes navrFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+/* end control */
